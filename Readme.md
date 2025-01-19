@@ -18,7 +18,7 @@ Before starting, ensure you have the following installed on your machine:
 ### **Step 1: Initialize the Database**
 Start a MySQL database instance using Docker:
 ```bash
-docker run --name workshop101 \
+docker run --rm --name workshop101 \
   -e MYSQL_ROOT_PASSWORD="password" \
   -e MYSQL_DATABASE="workshop101" \
   -p 3306:3306 \
